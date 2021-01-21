@@ -17,7 +17,7 @@ if(!localStorage.getItem('name')) {
   setUserName()
 } else {
   var storedName = localStorage.getItem('name');
-  myHeading.textContent = `You're cool dude, ${storedName}`
+  myHeading.textContent = `You're cool dude, ${storedName}!`
 }
 
 myButton.onclick = function() { //обработчик события на кнопку
@@ -27,5 +27,5 @@ myButton.onclick = function() { //обработчик события на кн�
 function setUserName() {
   var myName = prompt('Please enter your name.')
   localStorage.setItem('name', myName)
-  myHeading.textContent = `You're cool dude, ${myName}`
+  myHeading.textContent = `You're cool dude, ${myName}!`
 }
