@@ -1,9 +1,8 @@
 var myHeading = document.querySelector('h1')
 var myImage = document.querySelector('img')
 var myButton = document.querySelector('button')
-var myHeading = document.querySelector('h1')
 
-myHeading.textContent = 'Hello world!'
+// myHeading.textContent = 'Hello world!'
 
 myImage.onclick = function() {
     var mySrc = myImage.getAttribute('src')
