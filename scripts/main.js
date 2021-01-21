@@ -25,7 +25,7 @@ myButton.onclick = function() { //обработчик события на кн�
 }
 
 function setUserName() {
-  var myName = prompt('Please enter your name.');
-  localStorage.setItem('name', myName);
+  var myName = prompt('Please enter your name.')
+  localStorage.setItem('name', myName)
   myHeading.textContent = `You're cool dude, ${myName}`
 }
