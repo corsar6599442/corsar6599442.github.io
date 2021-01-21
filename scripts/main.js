@@ -21,8 +21,12 @@ if(!localStorage.getItem('name')) {
   myHeading.textContent = `You're cool dude, ${storedName}`;
 }
 
+myButton.onclick = function() { //обработчик события на кнопку
+  setUserName()
+}
+
 function setUserName() {
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
-  myHeading.textContent = 'Mozilla is cool, ' + myName;
+  myHeading.textContent = 'You're cool dude, ' + myName;
 }
